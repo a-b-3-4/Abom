@@ -16,4 +16,9 @@ namespace Abom
 		clientLogger = spdlog::stdout_color_mt("app");
 		clientLogger->set_level(spdlog::level::trace);
 	}
+
+	void Log::Finalize() {
+		coreLogger = NULL;
+		clientLogger = NULL;
+	}
 }

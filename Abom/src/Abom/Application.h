@@ -10,10 +10,10 @@ namespace Abom
 		Application();
 		virtual ~Application();
 
-		void Run();
+		virtual void Run();
 	};
 
-	//To be defined in a CLIENT
+	//To be implemented by CLIENT
 
 	Application* CreateApplication();
 }
